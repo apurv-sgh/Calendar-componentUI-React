@@ -16,6 +16,25 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### 3D Interactive Calendar (`artifacts/calendar-3d`)
+- **Type**: React + Vite web app
+- **Preview path**: `/`
+- **Tech**: React Three Fiber, Three.js, Drei, Zustand, Framer Motion, Tailwind CSS
+- **Features**:
+  - 3D animated background scene (floating rings, particles) via Three.js/R3F
+  - Wall calendar aesthetic with hero image per month, spiral binding, blue chevron design
+  - Month-to-month navigation with flip animation
+  - Date range selector (click start → click end, visual highlight states)
+  - Integrated notes system (per-day, per-range, per-month) with localStorage persistence
+  - Selection info badge (days count, date range label)
+  - Month quick-nav bar + year navigation
+  - Light/dark theme toggle
+  - Hover tilt effect on calendar card (CSS perspective)
+  - Responsive layout (stacked on mobile, side-by-side on desktop)
+  - WebGL with CSS fallback for environments without GPU support
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages
