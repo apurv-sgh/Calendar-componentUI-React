@@ -20,7 +20,7 @@ export default function TopBar() {
       {/* Logo */}
       <div className="flex items-center gap-2">
         <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-xs font-black">
-          3D
+          VU
         </div>
         <span className={`font-bold text-sm tracking-tight ${isDark ? "text-white" : "text-gray-800"}`}>
           Calendar
@@ -46,7 +46,7 @@ export default function TopBar() {
           onClick={toggleTheme}
           title="Toggle theme"
         >
-          {isDark ? "☀️" : "🌙"}
+          {isDark ? "Day" : "Night"}
         </motion.button>
       </div>
     </motion.div>
